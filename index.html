@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clube de Regatas Vasco da Gama</title>
+</head>
+
+<body onload="criarDivs()">
+    <header>
+        <div id="logo">
+            <img id="cruzdemalta" src="imagens/cruzdemalta.png">
+        </div>
+        <h1 class="titulo">Clube de Regatas Vasco da Gama</h1>
+    </header>
+    <main>
+        <section id="search">
+            <div class="container-pesquisa">
+                <div class="pesquisa-field">
+                    <h2>Grandes Ídolos</h2>
+                    <select name="busca" id="busca" class="custom-select" onchange="selecionaItem()">
+                        <option value="">Escolha o atleta</option>
+                        
+                    </select>
+                </div>
+                <div class="pesquisa-field">
+                    <h2>Títulos</h2>
+                    <select name="busca-titulos" id="busca-titulos" class="custom-select" onchange="selecionaTitulo()">
+                        <option value="">Escolha o Campeonato</option>
+                        
+                    </select>
+                </div>
+        </div>
+        </section>
+
+        <section id="pesquisa">
+        <!-- Conteudo populado pelo script app.js -->
+        </section>
+
+    </main>
+    <footer>
+        <p><small>2024 - Clube de Regatas Vasco da Gama. Todos os direitos reservados</small></p>
+        <p><small>Entre em contato pelo email: <a href="mailto:suporte@meuvasco.com.br" target="_blank">suporte@meuvasco.com.br</a></small></p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
